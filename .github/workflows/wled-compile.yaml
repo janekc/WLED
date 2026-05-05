@@ -31,7 +31,7 @@ jobs:
         npm install
         echo '[env:custom_build]' >>platformio.ini
         echo 'extends = env:esp32dev' >>platformio.ini
-        echo 'build_flags = ${env:esp32dev.build_flags} -D WLED_USE_ETHERNET -D PIXEL_COUNTS=236 -D WLED_AP_SSID='"fastfertig"' -D WLED_AP_PASS='"eswerdelicht"' -D UM_AUDIOREACTIVE_ENABLE ${esp32.AR_build_flags} -D USERMOD_ROTARY_ENCODER_UI -D USERMOD_FOUR_LINE_DISPLAY -D USERMOD_ROTARY_ENCODER_GPIO=INPUT -D ENCODER_DT_PIN=33 -D ENCODER_CLK_PIN=34 -D ENCODER_SW_PIN=36 -D I2CSCLPIN=32 -D I2CSDAPIN=4' >>platformio.ini
+        echo 'build_flags = ${env:esp32dev.build_flags} -D WLED_USE_ETHERNET -D PIXEL_COUNTS=236 -D UM_AUDIOREACTIVE_ENABLE ${esp32.AR_build_flags} -D USERMOD_ROTARY_ENCODER_UI -D USERMOD_FOUR_LINE_DISPLAY -D USERMOD_ROTARY_ENCODER_GPIO=INPUT -D ENCODER_DT_PIN=33 -D ENCODER_CLK_PIN=34 -D ENCODER_SW_PIN=36 -D I2CSCLPIN=32 -D I2CSDAPIN=4' >>platformio.ini
         echo 'lib_deps = ' >>platformio.ini
         echo '  ${env:esp32dev.lib_deps}' >>platformio.ini
         echo '  ${esp32.AR_lib_deps}' >>platformio.ini
