@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - '*'
+      - '!fastfertig'
   pull_request:
 
 jobs:
