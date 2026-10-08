@@ -32,3 +32,5 @@ wled-update.sh
 /wled00/wled00.ino.cpp
 /wled00/html_*.h
 /wled00/js_*.h
+platformio_override_old.ini
+platformio_override_own.ini
