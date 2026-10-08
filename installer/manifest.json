@@ -1,0 +1,11 @@
+{
+  "name": "WLED Fastfertig",
+  "version": "16.0.1",
+  "home_assistant_domain": "wled",
+  "builds": [
+    {
+      "chipFamily": "ESP32",
+      "parts": [{ "path": "firmware_factory.bin", "offset": 0 }]
+    }
+  ]
+}
